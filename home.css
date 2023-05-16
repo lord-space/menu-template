@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+     height: 300px;
+    width: 400px;
+}
+#products{
+    background-color: #f6dfcb;
+}
+#products .all-products{
+    max-width: 1200px;
+    margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px; 
+    }
+    #products .all-products .product-item .product-img{
+         background-color: white; 
+         
+    }
+        
+#products .product-item{
+     text-align: center;
+     padding-bottom:5px;
+}
+#products .product-header{
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+#products .product-header h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+#products .product-header p{
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.product-img h1, .product-img h3, .product-img p{
+    padding-bottom: 25px;
+}
+.product-img h1{
+    padding-top: 20px;
+}
+.product-img p{
+font-size: 2rem;
+font-weight: 600;
+color: goldenrod;
+}
+
+#products .downcase{
+    text-align: center;
+    padding: 50px;
+    font-size: 1.3rem;
+}
+#products .uppercase{
+    text-align: center;
+    padding: 50px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+@media screen and (min-width:320px) {
+    img{
+        width: 300px;
+        height: 200px;
+    }
+ #products .all-products{
+       max-width: 300px;
+       grid-template-columns: repeat(1,1fr);
+ }
+ #products .product-header h1{
+    font-size: 1.8rem;
+ }
+ #products .product-header p{
+    font-size:1rem ;
+ }   
+}
+
+
+@media screen and (min-width:768px) {
+    img{
+        width: 340px;
+        height: 240px;
+    }
+    #products .all-products{
+       max-width: 700px;
+       grid-template-columns: repeat(2,1fr);
+ }  
+ #products .product-header h1{
+    font-size: 2rem;
+ }
+ #products .product-header p{
+    font-size:1.1rem ;
+ }    
+}
+
+@media screen and (min-width:1024px) {
+     img{
+        width: 450px;
+        height: 350px;
+    } 
+    #products .all-products{
+      max-width: 900px;
+      grid-template-columns: repeat(2, 1fr);
+    }   
+    #products .product-header h1{
+        font-size: 2.2rem;
+     }
+     #products .product-header p{
+        font-size:1.2rem ;
+     }      
+}
+
+@media screen and (min-width:1440px) {
+    img{
+        width: 400px;
+        height: 300px;
+    }
+    #products .all-products{
+      max-width: 1200px;
+      grid-template-columns: repeat(3,1fr);
+    }   
+    #products .product-header h1{
+        font-size: 3rem;
+     }
+     #products .product-header p{
+        font-size:1.5rem ;
+     }  
+}
+
+
+
+
